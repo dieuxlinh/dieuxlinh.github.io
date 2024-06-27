@@ -9,13 +9,6 @@ body {
     background-color: #1a1a1a; /* dark grey background */
     color: white; /* white text */
     font-family: 'Made Mirage Thin', 'sans-serif'; /* using Made Mirage Thin font */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
 }
 
 .content-container {
@@ -26,7 +19,7 @@ body {
 }
 
 h1 {
-    font-size: 3rem; /* Larger font size for the first line */
+    font-size: 4rem; /* Larger font size for the first line */
     margin-top: 3rem;
     margin-bottom: 1rem; /* Adjust margin for spacing */
     text-align: left;
@@ -34,7 +27,7 @@ h1 {
 }
 
 p {
-    font-size: 1rem; /* Smaller font size for the second line */
+    font-size: 2rem; /* Smaller font size for the second line */
     margin-bottom: 0.5rem; /* Adjust margin for spacing */
     font-family: 'Made Mirage Thin', 'sans-serif'; /* using Made Mirage Thin font for p */
 }
