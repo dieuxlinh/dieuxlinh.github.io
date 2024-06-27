@@ -32,6 +32,10 @@ p {
     font-family: 'Made Mirage Thin', 'sans-serif'; /* using Made Mirage Thin font for p */
 }
 
+.p-padding {
+    padding-bottom: 10px;
+}
+
 a {
     color: #e97f7f; /* muted red color for links */
     text-decoration: none; /* remove underline */
