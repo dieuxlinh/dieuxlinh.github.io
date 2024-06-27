@@ -9,6 +9,13 @@ body {
     background-color: #1a1a1a;
     color: white;
     font-family: 'Made Mirage Thin', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
 }
 
 .content-container {
@@ -16,11 +23,11 @@ body {
     margin: 0 auto;
     padding: 20px;
     text-align: left;
-	margin-left: 15px;
+    margin-left: 20px;
 }
 
 h1 {
-    font-size: 42px;
+    font-size: 64px;
     margin-top: 3rem;
     margin-bottom: 1rem;
     text-align: left;
@@ -28,13 +35,13 @@ h1 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 32px;
     margin-bottom: 0.5rem;
     font-family: 'Made Mirage Thin', 'sans-serif';
 }
 
 .p-padding {
-    padding-bottom: 9px;
+    padding-bottom: 10px !important;
 }
 
 a {
@@ -44,4 +51,8 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.light-gray-text {
+    color: #666; /* Slightly lighter gray color */
 }
