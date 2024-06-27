@@ -25,14 +25,14 @@ body {
 h1 {
     font-size: 40px;
     margin-top: 3rem;
-    margin-bottom: 0.05rem;
+    margin-bottom: 1px;
     text-align: left; /* Left-aligning h1 text */
     font-family: 'Made Mirage', 'sans-serif';
 }
 
 p {
     font-size: 19px;
-    margin-bottom: 0.2rem;
+    margin-bottom: 1px;
     font-family: 'Made Mirage Thin', 'sans-serif';
 }
 
