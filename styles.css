@@ -34,13 +34,13 @@ h1 {
 }
 
 p {
-    font-size: 0.8rem; /* Smaller font size for the second line */
+    font-size: 1rem; /* Smaller font size for the second line */
     margin-bottom: 0.5rem; /* Adjust margin for spacing */
     font-family: 'Made Mirage Thin', 'sans-serif'; /* using Made Mirage Thin font for p */
 }
 
 a {
-    color: #d32f2f; /* muted red color for links */
+    color: #e97f7f; /* muted red color for links */
     text-decoration: none; /* remove underline */
 }
 
