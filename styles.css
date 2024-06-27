@@ -16,15 +16,16 @@ body {
 
 .content-container {
     max-width: min(90%, 60ch);
-    margin: 20px;
+    margin: 0;
     padding: 20px;
+    padding-left: 10px;
     text-align: left; /* Left-aligning text within the content container */
 }
 
 h1 {
     font-size: 40px;
     margin-top: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 5px;
     text-align: left; /* Left-aligning h1 text */
     font-family: 'Made Mirage', 'sans-serif';
 }
