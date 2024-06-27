@@ -12,29 +12,29 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    text-align: left;
+    text-align: center; /* Centering text alignment for body */
 }
 
 .content-container {
     max-width: min(90%, 60ch);
     margin: 0 auto;
     padding: 20px;
-    text-align: left;
+    text-align: left; /* Left-aligning text within the content container */
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 64px;
     margin-top: 3rem;
     margin-bottom: 1rem;
-    text-align: left;
+    text-align: left; /* Left-aligning h1 text */
     font-family: 'Made Mirage', 'sans-serif';
 }
 
 p {
-    font-size: 15px;
+    font-size: 32px;
     margin-bottom: 0.5rem;
     font-family: 'Made Mirage Thin', 'sans-serif';
 }
