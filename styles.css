@@ -1,6 +1,5 @@
 @font-face {
     font-family: 'Made Mirage';
-    src: url('fonts/made-mirage/made-mirage-regular.otf');
     src: url('fonts/made-mirage/made-mirage-regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
@@ -13,38 +12,23 @@ body {
 }
 
 .content-container {
-	max-width: min(90%, 60ch);
-	margin: 0 auto;
-	padding: 1rem;
-	text-align: left;	
+    max-width: min(90%, 60ch);
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: left;    
 }
 
 h1 {
-	font-size: 1.5rem;
-	margin-top: 3rem;
-	text-align: left;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    text-align: left;
 }
 
 p {
-	font-size: 1rem;
-	text-align: left;
+    font-size: 1rem;
+    text-align: left;
 }
 
-a:link {
-	color: #d7c9aa;
-}
-
-a:visited {
-	color: #d7c9aa;
-}
-a:focus {
-	color: #d7c9aa;
-}
-
-a:hover {
-	color: #d7c9aa;
-}
-
-a:active {
-	color: #d7c9aa;
+a:link, a:visited, a:focus, a:hover, a:active {
+    color: #d7c9aa;
 }
