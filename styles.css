@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Made Mirage';
     src: url('fonts/made-mirage/made-mirage-regular.otf');
-    src: url('fonts/made-mirage/made-mirage-regular.otf') format('truetype');
+    src: url('fonts/made-mirage/made-mirage-regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
