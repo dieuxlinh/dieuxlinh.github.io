@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Made Mirage';
+    src: url('fonts/made_mirage/made-mirage-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #1a1a1a; /* dark grey background */
+    color: white; /* white text */
+    font-family: 'Made Mirage', serif; /* using Made Mirage font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1em;
+    margin: 5px 0;
+}
