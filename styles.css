@@ -23,6 +23,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     text-align: left;
+	margin-left: 70px;
 }
 
 h1 {
@@ -40,7 +41,7 @@ p {
 }
 
 .p-padding {
-    padding-bottom: 70px !important;
+    padding-bottom: 10px !important;
 }
 
 a {
