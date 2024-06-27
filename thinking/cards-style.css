@@ -8,29 +8,13 @@
 }
 
 body {
-    background-color: #1a1a1a;
-    color: white;
-    font-family: 'Made Mirage Thin', 'sans-serif';
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
-    margin-top: 1.5%;
-    padding-left: 20%;
-    padding-right: 20%;
-    overflow: hidden;
-}
 
-.container {
-    align-items: center;
-    min-height: 100vh;
-    background: #0f0f0f;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
     display: flex;
     justify-content: center;
-    text-align: left;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    overflow: hidden;
 }
 
 /* text */
@@ -49,6 +33,17 @@ body {
 }
 
 /* game */
+.container {
+    align-items: center;
+    min-height: 100vh;
+    background: #0f0f0f;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
 
 .container .card {
     position: absolute;
@@ -59,7 +54,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 2);
     font-size: 12px;
     border: 10px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -70,7 +65,7 @@ body {
 }
 
 .container:hover .card {
-    transform: rotate(calc(var(--i) * 5deg)) translate (calc(var(--i) * 120px), -50px);
+    transform: rotate(calc(var(--i) * 5deg)) translate(calc(var(--i) * 120px), -50px);
     color: rgba(0, 0, 0, 2);
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
 }
