@@ -25,7 +25,6 @@ body {
 h1 {
     font-size: 40px;
     margin-top: 3rem;
-    margin-bottom: 5px;
     text-align: left; /* Left-aligning h1 text */
     font-family: 'Made Mirage', 'sans-serif';
 }
