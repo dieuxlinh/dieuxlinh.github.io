@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 38px;
     margin-top: 3rem;
     margin-bottom: 1rem;
     text-align: left;
@@ -27,7 +27,7 @@ h1 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 0.5rem;
     font-family: 'Made Mirage Thin', 'sans-serif';
 }
