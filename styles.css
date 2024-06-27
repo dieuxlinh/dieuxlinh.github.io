@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 50px;
     margin-top: 3rem;
     margin-bottom: 1rem;
     text-align: left;
@@ -27,13 +27,13 @@ h1 {
 }
 
 p {
-    font-size: 32px;
+    font-size: 20px;
     margin-bottom: 0.5rem;
     font-family: 'Made Mirage Thin', 'sans-serif';
 }
 
 .p-padding {
-    padding-bottom: 10px;
+    padding-bottom: 9px;
 }
 
 a {
