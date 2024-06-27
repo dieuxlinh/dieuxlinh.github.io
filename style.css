@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Made Mirage';
-    src: url('fonts/made-mirage/made-mirage-regular.otf') format('opentype');
+    src: url('fonts/made-mirage/made-mirage-regular.otf');
+    src: url('fonts/made-mirage/made-mirage-regular.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -8,37 +9,42 @@
 body {
     background-color: #1a1a1a; /* dark grey background */
     color: white; /* white text */
-    font-family: 'Made Mirage', serif; /* using Made Mirage font */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
+    font-family: 'Made Mirage', 'sans-serif'; /* using Made Mirage font */
 }
 
-.container {
-    max-width: 600px;
-    padding: 20px;
+.content-container {
+	max-width: min(90%, 60ch);
+	margin: 0 auto;
+	padding: 1rem;
+	text-align: left;	
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+	font-size: 1.5rem;
+	margin-top: 3rem;
+	text-align: left;
 }
 
 p {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+	font-size: 1rem;
+	text-align: left;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+a:link {
+	color: #d7c9aa;
 }
 
-li {
-    font-size: 1em;
-    margin: 5px 0;
+a:visited {
+	color: #d7c9aa;
+}
+a:focus {
+	color: #d7c9aa;
+}
+
+a:hover {
+	color: #d7c9aa;
+}
+
+a:active {
+	color: #d7c9aa;
 }
