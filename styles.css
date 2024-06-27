@@ -23,7 +23,6 @@ body {
     margin: 0 auto;
     padding: 20px;
     text-align: left;
-    margin-left: 20px;
 }
 
 h1 {
@@ -54,5 +53,5 @@ a:hover {
 }
 
 .light-gray-text {
-    color: #666; /* Slightly lighter gray color */
+    color: #545454; /* Light gray color for the specified text */
 }
