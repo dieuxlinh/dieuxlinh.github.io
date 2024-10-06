@@ -20,16 +20,19 @@ body {
     padding-right: 20%;
 }
 
-.content-container {
-    max-width: min(90%, 60ch);
-    margin: 0;
-    padding: 20px;
-    padding-left: 67px;
-    text-align: left; /* Left-aligning text within the content container */
+.profile-section {
+    display: flex;
+    align-items: flex-start;
+    max-width: 900px; /* Container width to accommodate text and image */
+}
+
+.text-content {
+    max-width: 600px;
+    margin-right: 100px; /* Space between text and image */
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 35px;
     margin-top: 3rem;
     margin-bottom: 1px;
     text-align: left; /* Left-aligning h1 text */
@@ -42,10 +45,6 @@ p {
     font-family: 'Made Mirage Thin', 'sans-serif';
 }
 
-.p-padding {
-    padding-bottom: 10px;
-}
-
 a {
     color: #ff9690;
     text-decoration: none;
@@ -55,7 +54,29 @@ a:hover {
     text-decoration: underline;
 }
 
-.light-gray-text {
-    color: #acacac; /* Light gray color for the specified text */
+.bottom-margin {
+    margin-bottom: 20px;
 }
 
+/* Styling for the profile photo */
+.profile-photo {
+    width: 300px;  /* Set width to 350px */
+    height: auto;  /* Automatically adjust the height */
+    opacity: 0.5;  /* Set opacity to 0.5 */
+    margin-right: 10px;
+    margin-top: 110px;
+}
+
+.back-link {
+    position: absolute; /* Position it absolutely */
+    top: 80px; /* Distance from the top */
+    right: 120px; /* Distance from the right */
+    color: rgb(171, 171, 171); /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-family: 'Made Mirage', 'sans-serif'; /* Ensure font is applied */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.back-link:hover {
+    color: white; /* Change text color on hover */
+}
