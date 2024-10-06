@@ -47,14 +47,16 @@ body {
     opacity: 0.4;
 }
 
-/* Container for boxes */
+/* Updated Container for boxes */
 .container {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping of boxes */
     justify-content: center; /* Center align the boxes */
     align-items: flex-start; /* Align items at the top */
     flex-grow: 1; /* Allow the container to grow */
-    margin-top: 120px; /* Move the entire container down by 100px */
+    margin-top: 120px; /* Move the entire container down */
+    margin-left: 200px;
+    max-width: 800px;
 }
 
 /* Box styles */
@@ -71,7 +73,7 @@ body {
     line-height: 1.5;
     border: 10px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    margin: 10px; /* Margin around each box */
+    margin: 10px; /* 10px margin around each box for spacing */
     padding: 10px; /* Padding inside the box */
     box-sizing: border-box; /* Include padding in height and width */
     transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition on hover */
@@ -82,29 +84,63 @@ body {
     transform: scale(1.05); /* Slightly scale the box */
 }
 
+
 /* Paragraph styling */
 .inspiration {
     color: white;
     margin-top: 50px; /* Space above the paragraph */
     font-family: 'Made Mirage', 'sans-serif'; /* Ensure the same font is applied */
-    font-size: 12px; /* Font size for the paragraph */
+    font-size: 15px; /* Font size for the paragraph */
     line-height: 1.5; /* Improve readability */
     text-align: left; /* Center align the paragraph */
     max-width: 800px; /* Limit width for better readability */
     margin-left: 50px; /* Centering the paragraph */
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
 .back-link {
     position: absolute; /* Position it absolutely */
     top: 50px; /* Distance from the top */
     right: 50px; /* Distance from the right */
-    color: rgb(171, 171, 171); /* Text color */
+    color: rgb(171, 171, 171); /* Default text color */
     text-decoration: none; /* Remove underline */
     font-family: 'Made Mirage', 'sans-serif'; /* Ensure font is applied */
     transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
+/* Change color on hover */
 .back-link:hover {
     color: white; /* Change text color on hover */
+}
+
+/* Change color when clicked (active state) */
+.back-link:active {
+    color: #ff9690; /* Color when clicked */
+}
+
+/* Change color for visited links */
+.back-link:visited {
+    color: #ff9690; /* Color for visited links */
+}
+
+/* General hyperlink styles */
+a {
+    color: rgb(171, 171, 171); /* Default link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for color changes */
+}
+
+/* Change color on hover */
+a:hover {
+    color: white; /* Change text color on hover */
+}
+
+/* Change color when clicked (active state) */
+a:active {
+    color: #ff9690; /* Color when clicked */
+}
+
+/* Change color for visited links */
+a:visited {
+    color: #ff9690; /* Color for visited links */
 }
