@@ -1,6 +1,11 @@
 @font-face {
     font-family: 'Made Mirage';
     src: url('fonts/made-mirage/made-mirage-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Made Mirage Thin';
     src: url('fonts/made-mirage/made-mirage-thin.otf') format('opentype');
     font-weight: normal;
@@ -8,7 +13,6 @@
 }
 
 body {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,26 +21,35 @@ body {
     overflow: hidden;
 }
 
-/* text */
+/* Text styles */
 .title {
-    font-size: 40px;
-    margin-top: 3rem;
-    margin-bottom: 1px;
-    text-align: left; /* Left-aligning h1 text */
-    font-family: 'Made Mirage', 'sans-serif';
+    position: absolute; /* Positioning title */
+    top: 20px; /* Distance from top */
+    left: 20px; /* Distance from left */
+    color: white; /* Ensure title is white */
+    margin: 20px; /* Added margin around the title */
 }
 
-.subtitle {
-    font-size: 15px;
-    margin-bottom: 2px;
-    font-family: 'Made Mirage Thin', 'sans-serif';
+.title h1, .title h2 {
+    font-family: 'Made Mirage', 'sans-serif'; /* Ensure font is applied */
+    margin: 0; /* Remove margin */
 }
 
-/* game */
+.title h1 {
+    font-size: 40px; /* Title font size */
+    opacity: 0.6;
+}
+
+.title h2 {
+    font-size: 30px; /* Subtitle font size */
+    opacity: 0.4; /* 80% opacity */
+}
+
+/* Game container */
 .container {
     align-items: center;
     min-height: 100vh;
-    background: #0f0f0f;
+    background: #1a1a1a;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -48,34 +61,51 @@ body {
 .container .card {
     position: absolute;
     width: 240px;
-    height: 320px;
+    height: 320px; /* Maintain original height */
     border-radius: 8px;
-    background: #ff9690;
+    background: #730404; /* Updated card color */
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgba(0, 0, 0, 2);
-    font-size: 12px;
+    color: rgb(198, 198, 198); /* Font color */
+    font-size: 18px; /* Increased font size */
+    line-height: 1.5; /* Improved line height for readability */
     border: 10px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: 0.5s;
-    transform-origin: 50% 100%;
-    filter: hue-rotate(calc(var(--i)*45deg));
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s, box-shadow 0.5s, z-index 0.5s;
+    z-index: 1; /* Base z-index */
+    font-family: 'Made Mirage', 'sans-serif'; /* Ensure font is applied */
+    margin: 10px; /* Added margin around text */
+    padding: 10px; /* Padding inside the card */
+    box-sizing: border-box; /* Include padding in height and width */
+    top: 250px; /* Positioning for cards */
 }
 
 .container:hover .card {
-    transform: rotate(calc(var(--i) * 5deg)) translate(calc(var(--i) * 120px), -50px);
-    color: rgba(0, 0, 0, 2);
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+    transform: translate(calc(var(--i) * 70px), -30px); /* Spread cards */
+    z-index: 2; /* Ensure they are above the base layer */
 }
 
-.container:active .card {
-    background: #1a1a1a;
+.container .card.active {
+    z-index: 100; /* Bring the active card to top */
+    transform: scale(1.1); /* Slightly scale up the active card */
 }
 
-.container .card:active{
-    translate: calc(var(--i) * 30px) - 50px;
-    z-index: 100;
-    background: #1a1a1a
+.container .card:not(.active) {
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Explore button */
+.explore-button {
+    position: absolute; /* Position it absolutely */
+    top: 50px; /* Distance from the top */
+    right: 50px; /* Distance from the right */
+    color: rgb(171, 171, 171); /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-family: 'Made Mirage', 'sans-serif'; /* Ensure font is applied */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.explore-button:hover {
+    color: white; /* Change text color on hover */
 }

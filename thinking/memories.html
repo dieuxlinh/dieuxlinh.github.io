@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dieulinh's thoughts</title>
+    <link rel="stylesheet" type="text/css" href="cards-style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>the love we leave behind.</h1>
+            <h2>or the love we carry forward. it depends.</h2>
+        </div>
+        
+        <div class="card" style="--i: -4;">with one memory, summarise your childhood.</div>
+        <div class="card" style="--i: -3;">what was a dream you had but never fulfilled? why not, and how do you feel about that?</div>
+        <div class="card" style="--i: -2;">if you could change one thing about your past, what would it be?</div>
+        <div class="card" style="--i: -1;">if you could bring one thing back from your past, what would it be?</div>
+        <div class="card" style="--i: 0;">what is your earliest memory?</div>
+        <div class="card" style="--i: 1;">what is your favourite recent memory?</div>
+        <div class="card" style="--i: 2;">what is your fondest memory from childhood?</div>
+        <div class="card" style="--i: 3;">who taught you the most about love and loss?</div>
+    </div>
+
+    <a href="decks.html" class="explore-button">explore more decks</a>
+    <script>
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', function() {
+                if (this.classList.contains('active')) {
+                    this.classList.remove('active'); // Remove if already active
+                } else {
+                    document.querySelectorAll('.card').forEach(c => {
+                        c.classList.remove('active'); // Remove active class from all
+                    });
+                    this.classList.add('active'); // Set the clicked card as active
+                }
+            });
+        });
+    </script>
+</body>
+</html>
