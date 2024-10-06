@@ -110,7 +110,7 @@ body {
 
 /* Change color on hover */
 .back-link:hover {
-    color: white; /* Change text color on hover */
+    color: #ff9690; /* Change text color on hover */
 }
 
 /* Change color when clicked (active state) */
@@ -120,7 +120,7 @@ body {
 
 /* Change color for visited links */
 .back-link:visited {
-    color: #ff9690; /* Color for visited links */
+    color: white; /* Color for visited links */
 }
 
 /* General hyperlink styles */
@@ -132,7 +132,7 @@ a {
 
 /* Change color on hover */
 a:hover {
-    color: white; /* Change text color on hover */
+    color: #ff9690; /* Change text color on hover */
 }
 
 /* Change color when clicked (active state) */
@@ -142,5 +142,5 @@ a:active {
 
 /* Change color for visited links */
 a:visited {
-    color: #ff9690; /* Color for visited links */
+    color: white; /* Color for visited links */
 }
