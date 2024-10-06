@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dieulinh's thoughts</title>
+    <link rel="stylesheet" type="text/css" href="cards-style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>me.</h1>
+            <h2>just between us, i'm scared of being perceived yet crave to be understood.</h2>
+        </div>
+        
+        <div class="card" style="--i: -4;">what's one question you've been dying to ask me?</div>
+        <div class="card" style="--i: -3;">what about me confuses you?</div>
+        <div class="card" style="--i: -2;">what do you think i’m most afraid of?</div>
+        <div class="card" style="--i: -1;">make an assumption about me. don’t hold back. i mean it.</div>
+        <div class="card" style="--i: 0;">if i were an ice cream flavour what would i be? why?</div>
+        <div class="card" style="--i: 1;">who do you think means the most to me?</div>
+        <div class="card" style="--i: 2;">if i were a character in a book or movie, who would i be?</div>
+        <div class="card" style="--i: 3;">if my life was a genre, which would it be?</div>
+    </div>
+    
+    <a href="decks.html" class="explore-button">explore more decks</a>
+    <script>
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', function() {
+                if (this.classList.contains('active')) {
+                    this.classList.remove('active'); // Remove if already active
+                } else {
+                    document.querySelectorAll('.card').forEach(c => {
+                        c.classList.remove('active'); // Remove active class from all
+                    });
+                    this.classList.add('active'); // Set the clicked card as active
+                }
+            });
+        });
+    </script>
+</body>
+</html>

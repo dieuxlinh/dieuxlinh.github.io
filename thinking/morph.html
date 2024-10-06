@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dieulinh's thoughts</title>
+    <link rel="stylesheet" type="text/css" href="cards-style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>the ways that love morphs.</h1>
+            <h2>everything boils down to love or the lack of it. don't you reckon?</h2>
+        </div>
+        
+        <div class="card" style="--i: -4;">how do you navigate grief?</div>
+        <div class="card" style="--i: -3;">when was the last time you cried? why?</div>
+        <div class="card" style="--i: -2;">who was the last person you felt like you were totally yourself with?</div>
+        <div class="card" style="--i: -1;">how do you let sadness out of your system? how about anger?</div>
+        <div class="card" style="--i: 0;">when was the last time you felt understood?</div>
+        <div class="card" style="--i: 1;">what’s the worst thing you’ve ever said? who was it to?</div>
+        <div class="card" style="--i: 2;">what’s the worst thing you’ve ever had to say?</div>
+        <div class="card" style="--i: 3;">are you a sentimental person? what is the most sentimental thing to you?</div>
+    </div>
+
+    <a href="decks.html" class="explore-button">explore more decks</a>
+    <script>
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', function() {
+                if (this.classList.contains('active')) {
+                    this.classList.remove('active'); // Remove if already active
+                } else {
+                    document.querySelectorAll('.card').forEach(c => {
+                        c.classList.remove('active'); // Remove active class from all
+                    });
+                    this.classList.add('active'); // Set the clicked card as active
+                }
+            });
+        });
+    </script>
+</body>
+</html>

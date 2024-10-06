@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dieulinh's thoughts</title>
+    <link rel="stylesheet" type="text/css" href="cards-style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>you.</h1>
+            <h2>anything i missed?</h2>
+        </div>
+        
+        <div class="card" style="--i: -4;">what is one thing you wish people knew about you?</div>
+        <div class="card" style="--i: -3;">who consistently makes you feel loved? how do you reciprocate?</div>
+        <div class="card" style="--i: -2;">what’s one thing that makes you who you are?</div>
+        <div class="card" style="--i: -1;">do you think this is your first or your last life? or somewhere in between? why?</div>
+        <div class="card" style="--i: 0;">if you could design your last life down to the detail, what would it be like? how is it different from this one?</div>
+        <div class="card" style="--i: 1;">what is your relationship with your ego? how and why has it changed over the years?</div>
+        <div class="card" style="--i: 2;">what book has influenced you the most? (write to me with its title if you haven’t yet)</div>
+        <div class="card" style="--i: 3;">what inspires you the most?</div>
+    </div>
+
+    <a href="decks.html" class="explore-button">explore more decks</a>
+    <script>
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', function() {
+                if (this.classList.contains('active')) {
+                    this.classList.remove('active'); // Remove if already active
+                } else {
+                    document.querySelectorAll('.card').forEach(c => {
+                        c.classList.remove('active'); // Remove active class from all
+                    });
+                    this.classList.add('active'); // Set the clicked card as active
+                }
+            });
+        });
+    </script>
+</body>
+</html>
