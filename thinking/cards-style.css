@@ -81,6 +81,19 @@ body {
     top: 250px; /* Positioning for cards */
 }
 
+/* Add styling for the text at the bottom */
+.container .card::after {
+    content: "dieulinh's thoughts"; /* Text to display */
+    position: absolute;
+    bottom: 10px; /* Align text at the bottom */
+    width: 100%; /* Span the full width of the card */
+    text-align: center; /* Center-align the text */
+    font-size: 8pt; /* Font size of 10pt */
+    font-family: 'Made Mirage', 'sans-serif'; /* Apply Mirage font */
+    opacity: 0.25; /* Set opacity to 40% */
+    color: rgb(198, 198, 198); /* Ensure the text color matches card text */
+}
+
 .container:hover .card {
     transform: translate(calc(var(--i) * 70px), -30px); /* Spread cards */
     z-index: 2; /* Ensure they are above the base layer */
