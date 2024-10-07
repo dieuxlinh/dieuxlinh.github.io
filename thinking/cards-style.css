@@ -63,7 +63,7 @@ body {
     width: 240px;
     height: 320px; /* Maintain original height */
     border-radius: 8px;
-    background: #730404; /* Updated card color */
+    background: #5b0d0d; /* Updated card color */
     display: flex;
     justify-content: center;
     align-items: center;
