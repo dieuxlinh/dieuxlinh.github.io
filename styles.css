@@ -24,7 +24,7 @@ body {
 .profile-section {
     display: flex;
     align-items: flex-start;
-    max-width: 900px; /* Container width to accommodate text and image */
+    max-width: 800px; /* Container width to accommodate text and image */
 }
 
 .text-content {
