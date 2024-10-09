@@ -51,7 +51,7 @@ body{
     color: white;
     margin: 20px 0; /* Added margin around the title */
     position: absolute; /* Positioning title */
-    top: 150px; /* Distance from top */
+    top: 140px; /* Distance from top */
     left: 700px; /* Distance from left */
 }
 
