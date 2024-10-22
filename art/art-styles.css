@@ -62,7 +62,6 @@ body {
     text-align: left;
 }
 
-
 .art-showcase {
     display: flex;
     flex-direction: column;
@@ -129,4 +128,58 @@ body {
 
 .back-link:hover {
     color: #ff9690;
+}
+
+/* Responsive Design - Fixing Spacing Issues on Mobile */
+
+@media screen and (max-width: 768px) {
+
+    .title {
+        left: 20px;
+    }
+    .subtitle, .subtitle2, .subtitle3 {
+        left: 20px;
+    }
+
+    /* Fix overlapping issues by reducing text size and margin adjustments */
+    .subtitle p, .subtitle2 p, .subtitle3 p {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+
+    .container {
+        margin: 20px 0;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .back-link {
+        top: 45px; /* Adjust distance from the top for mobile */
+        left: 400px; /* Adjust distance from the right for mobile */
+    }
+
+    .back-link:hover,
+    .back-link:active {
+        color: #ff9690;
+    }
+
+    .back-link:visited {
+        color: white;
+    }
+
+    /* Fix title font-size on mobile */
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .title h2 {
+        font-size: 24px;
+    }
+
+    /* Ensure container alignment */
+    .container {
+        align-items: center; /* Center items in the container */
+    }
 }
