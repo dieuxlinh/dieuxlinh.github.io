@@ -79,7 +79,9 @@ body {
 
 /* Adjusted container for Flipbook and spacing issues */
 .container {
+    
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
@@ -179,6 +181,7 @@ a:visited {
 /* Responsive Design - Fixing Spacing Issues on Mobile */
 
 @media screen and (max-width: 768px) {
+
     .title {
         left: 20px;
     }
@@ -208,8 +211,18 @@ a:visited {
     }
 
     .back-link {
-        top: 20px;
-        right: 20px;
+        top: 45px; /* Adjust distance from the top for mobile */
+        left: 400px; /* Adjust distance from the right for mobile */
+    }
+    
+
+    .back-link:hover,
+    .back-link:active {
+        color: #ff9690;
+    }
+
+    .back-link:visited {
+        color: white;
     }
 
     /* Fix title font-size on mobile */
@@ -219,5 +232,29 @@ a:visited {
 
     .title h2 {
         font-size: 24px;
+    }
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+
+    .book-container {
+        flex-direction: column; /* Stack text above the book image on small screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .book-title {
+        font-size: 16px; /* Adjust font size for book title */
+    }
+
+    .book-content {
+        font-size: 14px; /* Adjust font size for book content */
+    }
+
+    .book-image {
+        width: 100%; /* Make the book image responsive */
+        margin: 10px 0 0 0; /* Margin above the book image */
     }
 }
