@@ -45,6 +45,33 @@ body {
     opacity: 0.4; /* 80% opacity */
 }
 
+.title h3 {
+    margin-top: 10px; /* Space above the paragraph */
+    font-family: 'Made Mirage', 'sans-serif'; /* Ensure the same font is applied */
+    font-size: 15px; /* Font size for the paragraph */
+    line-height: 1.5; /* Improve readability */
+    text-align: left; /* Center align the paragraph */
+    max-width: 800px; /* Limit width for better readability */
+    margin-left: 0px; /* Centering the paragraph */
+    opacity: 0.4;;
+    font-weight: normal;
+}
+
+
+.back-link {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    color: rgb(171, 171, 171);
+    text-decoration: none;
+    font-family: 'Made Mirage', 'sans-serif';
+    transition: color 0.3s;
+}
+
+.back-link:hover {
+    color: #ff9690;
+}
+
 /* Game container */
 .container {
     align-items: center;
