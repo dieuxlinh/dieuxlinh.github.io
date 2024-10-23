@@ -109,19 +109,9 @@ body {
     transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
-/* Change color on hover */
-.back-link:hover {
-    color: #ff9690; /* Change text color on hover */
-}
-
-/* Change color when clicked (active state) */
+.back-link:hover,
 .back-link:active {
-    color: #ff9690; /* Color when clicked */
-}
-
-/* Change color for visited links */
-.back-link:visited {
-    color: white; /* Color for visited links */
+    color: #ff9690;
 }
 
 /* General Link Styles */
