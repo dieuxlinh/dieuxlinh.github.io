@@ -166,10 +166,6 @@ body {
         color: #ff9690;
     }
 
-    .back-link:visited {
-        color: white;
-    }
-
     /* Fix title font-size on mobile */
     .title h1 {
         font-size: 30px;
