@@ -100,17 +100,16 @@ body {
 }
 
 .back-link {
-    position: absolute; /* Position it absolutely */
-    top: 50px; /* Distance from the top */
-    right: 50px; /* Distance from the right */
-    color: rgb(171, 171, 171); /* Default text color */
-    text-decoration: none; /* Remove underline */
-    font-family: 'Made Mirage', 'sans-serif'; /* Ensure font is applied */
-    transition: color 0.3s; /* Smooth transition for hover effect */
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    color: rgb(171, 171, 171);
+    text-decoration: none;
+    font-family: 'Made Mirage', 'sans-serif';
+    transition: color 0.3s;
 }
 
-.back-link:hover,
-.back-link:active {
+.back-link:hover {
     color: #ff9690;
 }
 
