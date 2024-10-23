@@ -9,6 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
     font-family: sans-serif;
     background-color: #1a1a1a;
 }
@@ -19,7 +20,6 @@ body {
     width: 240px;
     height: 320px;
     transition: transform 0.5s;
-    margin: 0 25px; /* Adds space on both sides, making it a total of 50px between books */
 }
 
 .paper {
@@ -29,6 +29,7 @@ body {
     top: 0;
     left: 0;
     perspective: 1500px;
+
 }
 
 .front,
@@ -63,7 +64,7 @@ body {
 }
 
 .back-content {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg)
 }
 
 /* Paper flip effect */

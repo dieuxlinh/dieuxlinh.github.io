@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dieulinh's thoughts</title>
+    <link rel="stylesheet" type="text/css" href="cards-style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>from the vault.</h1>
+            <h2>questions i've pondered lately.</h2>
+            <h3>
+                you've discovered the vault of questions. thank you for being so curious.<br>
+                here are some extra sets of questions, special questions that have meant a lot to me as of late.<br>
+                this list changes every so often. last changed: wednesday october 23rd, 2024.<br>
+            </h3>
+        </div>
+
+        <div class="card" style="--i: -4;">think of someone you love. what dessert would they be? why?</div>
+        <div class="card" style="--i: -3;">what's one thing you constantly make time for? why that?</div>
+        <div class="card" style="--i: -2;">what do you think about when the seasons change?</div>
+        <div class="card" style="--i: -1;">compared to those around you, do you not care enough or care too much? how does that feel?</div>
+        <div class="card" style="--i: 0;">will there be a day where i stop being too clever i remember to be kind?</div>
+        <div class="card" style="--i: 1;">what's one piece of media that has moved you to tears? why?</div>
+        <div class="card" style="--i: 2;">how do you reciprocrate the love that you take?</div>
+        <div class="card" style="--i: 3;">not a question, but think of someone you love. now call them.</div>
+
+    </div>
+
+    <a href="decks.html" class="back-link">back</a>
+    <script>
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', function() {
+                if (this.classList.contains('active')) {
+                    this.classList.remove('active'); // Remove if already active
+                } else {
+                    document.querySelectorAll('.card').forEach(c => {
+                        c.classList.remove('active'); // Remove active class from all
+                    });
+                    this.classList.add('active'); // Set the clicked card as active
+                }
+            });
+        });
+    </script>
+
+    
+</body>
+</html>
