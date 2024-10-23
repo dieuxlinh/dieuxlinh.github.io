@@ -124,24 +124,14 @@ body {
     color: white; /* Color for visited links */
 }
 
-/* General hyperlink styles */
+/* General Link Styles */
 a {
-    color: rgb(171, 171, 171); /* Default link color */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s; /* Smooth transition for color changes */
+    color: rgb(171, 171, 171);
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-/* Change color on hover */
-a:hover {
-    color: #ff9690; /* Change text color on hover */
-}
-
-/* Change color when clicked (active state) */
+a:hover,
 a:active {
-    color: #ff9690; /* Color when clicked */
-}
-
-/* Change color for visited links */
-a:visited {
-    color: white; /* Color for visited links */
+    color: #ff9690;
 }
