@@ -157,7 +157,8 @@ body {
 
     .back-link {
         top: 45px; /* Adjust distance from the top for mobile */
-        left: 400px; /* Adjust distance from the right for mobile */
+        right: 20px; /* Adjust distance from the right for mobile */
+        color: rgb(171, 171, 171);
     }
 
     .back-link:hover,
