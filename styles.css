@@ -55,6 +55,18 @@ a:hover {
     text-decoration: underline;
 }
 
+b {
+    color: rgb(171, 171, 171);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+b:hover,
+b:active {
+    color: #ff9690;
+    text-decoration: none;
+}
+
 .bottom-margin {
     margin-bottom: 20px;
 }
@@ -79,7 +91,8 @@ a:hover {
 }
 
 .back-link:hover {
-    color: white; /* Change text color on hover */
+    color: #ff9690;
+    text-decoration: none;
 }
 
 /* Mobile styles */
