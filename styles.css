@@ -81,3 +81,50 @@ a:hover {
 .back-link:hover {
     color: white; /* Change text color on hover */
 }
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .profile-section {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center items on smaller screens */
+        max-width: 100%;
+    }
+
+    .text-content {
+        margin-right: 0;
+        max-width: 100%; /* Take up full width */
+        text-align: left; /* Center-align text */
+    }
+
+    .profile-photo {
+        margin-top: 20px;
+        width: 80%; /* Reduce image size */
+        opacity: 1; /* Increase opacity for better visibility */
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .back-link {
+        top: 90px; /* Adjust distance from the top for mobile */
+        right: 30px; /* Adjust distance from the right for mobile */
+        color: rgb(171, 171, 171);
+    }
+
+    .back-link:hover,
+    .back-link:active {
+        color: #ff9690;
+    }
+}
