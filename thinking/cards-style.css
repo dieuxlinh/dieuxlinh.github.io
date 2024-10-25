@@ -150,3 +150,27 @@ body {
     color: #ff9690; /* Change text color on hover */
 }
 
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .explore-button {
+        top: 60px; /* Adjust distance from the top for mobile */
+        right: 30px; /* Adjust distance from the right for mobile */
+        color: rgb(171, 171, 171);
+    }
+
+    .explore-button:hover,
+    .explore-button:active {
+        color: #ff9690;
+    }
+}
+
+
