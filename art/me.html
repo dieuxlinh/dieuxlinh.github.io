@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>capturing it</title>
+  <link rel="stylesheet" type="text/css" href="art-styles.css" />
+</head>
+<body>
+  <a href="capture-it.html" class="back-link">back</a>
+
+  <div class="title">
+    <h1>me</h1>
+    <h2>feeling shy rn. check back later.</h2>
+  </div>
+
+  <script>
+    document.querySelectorAll('.photo').forEach(photo => {
+      photo.addEventListener('click', () => {
+        photo.classList.toggle('flipped');
+      });
+    });
+  </script>
+</body>
+</html>

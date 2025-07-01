@@ -62,7 +62,6 @@ body {
     text-align: left;
 }
 
-/* General Link Styles */
 a {
     color: rgb(171, 171, 171);
     text-decoration: none;
@@ -78,7 +77,7 @@ a:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 140px; /* Adjusted margin to move the art showcase down */
+    margin-top: 140px;
 }
 
 .art-showcase p {
@@ -114,7 +113,7 @@ a:active {
     margin-top: 10px;
     font-size: 14px;
     font-family: 'Made Mirage Thin', 'sans-serif';
-    color: rgba(255, 255, 255, 0.6); /* Grey similar to h1 heading */
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .inspiration {
@@ -142,18 +141,179 @@ a:active {
     color: #ff9690;
 }
 
-/* Responsive Design - Fixing Spacing Issues on Mobile */
+.film-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.film-item {
+    flex: 0 1 calc(40% - 10px);
+    text-align: left;
+    margin-bottom: 30px;
+    max-width: 300px;
+}
+
+.film-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    box-shadow: none;
+    display: block;
+}
+
+.film-title {
+    font-size: 30px;
+    opacity: 0.4;
+    color: white;
+    font-family: 'Made Mirage', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    display: block;
+    text-align: center;
+}
+
+.film-description {
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: 'Made Mirage Thin', sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: left;
+}
+
+
+.photo {
+    width: 360px;
+    height: 240px;
+    cursor: pointer;
+    margin: 10px;
+    position: relative;
+    perspective: 1500px; 
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.photo-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+    transform-origin: center center;
+    box-shadow: none;
+}
+
+.photo.flipped .photo-inner {
+    transform: rotateY(-180deg);
+    box-shadow: none;
+}
+
+.photo-front,
+.photo-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: none;
+    backface-visibility: hidden;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Made Mirage Thin', sans-serif;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: none;
+}
+
+.photo-front {
+    background-color: transparent;
+    z-index: 2;
+}
+
+.photo-front img {
+    width: 350px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    user-select: none;
+    pointer-events: none;
+}
+
+.photo.flipped .photo-front {
+    transform: rotateY(10deg);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.photo-back {
+    background-color: #f8f8f0;
+    opacity: 1;
+    transform: rotateY(180deg);
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    user-select: text;
+}
+
+.photo-back p {
+    color: #333 
+  }
+
+/* Rotate the image */
+.rotate-90 {
+    transform: rotate(90deg) scale(0.95);
+    transform-origin: center center;
+  }
+  
+  /* Special size for rotated photo cards */
+  .photo.photo-rotated {
+    width: 240px;
+    height: 360px;
+  }
+  
+  /* Match inner dimensions */
+  .photo.photo-rotated .photo-front img {
+    width: 360px;
+    height: 240px;
+    transform: rotate(90deg);
+  transform-origin: center center;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+  }
+  
+  /* Match backside styling */
+  .photo.photo-rotated .photo-front,
+  .photo.photo-rotated .photo-back {
+    width: 240px;
+    height: 360px;
+    padding: 20px;
+    box-sizing: none;
+  }
+
+/* Responsive Design */
 
 @media screen and (max-width: 768px) {
-
     .title {
         left: 20px;
     }
+
+    .film-item {
+        flex: 0 1 100%;
+    }
+
     .subtitle, .subtitle2, .subtitle3 {
         left: 20px;
     }
 
-    /* Fix overlapping issues by reducing text size and margin adjustments */
     .subtitle p, .subtitle2 p, .subtitle3 p {
         font-size: 13px;
         margin: 5px 0;
@@ -168,8 +328,8 @@ a:active {
     }
 
     .back-link {
-        top: 45px; /* Adjust distance from the top for mobile */
-        right: 20px; /* Adjust distance from the right for mobile */
+        top: 45px;
+        right: 20px;
         color: rgb(171, 171, 171);
     }
 
@@ -178,7 +338,6 @@ a:active {
         color: #ff9690;
     }
 
-    /* Fix title font-size on mobile */
     .title h1 {
         font-size: 30px;
     }
@@ -187,8 +346,7 @@ a:active {
         font-size: 24px;
     }
 
-    /* Ensure container alignment */
     .container {
-        align-items: center; /* Center items in the container */
+        align-items: center;
     }
 }

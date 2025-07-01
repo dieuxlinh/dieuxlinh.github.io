@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>capturing it</title>
+  <link rel="stylesheet" type="text/css" href="art-styles.css" />
+</head>
+<body>
+  <a href="capture-it.html" class="back-link">back</a>
+
+  <div class="title">
+    <h1>places</h1>
+    <h2>leaving is the hardest thing, until you do it. then it's the easiest.</h2>
+  </div>
+
+  <div class="art-showcase">
+    <div class="art-section">
+
+      <div class="art-item">
+        <div class="photo photo-rotated">
+          <div class="photo-inner">
+            <div class="photo-front">
+              <img src="photos/places/1.jpg" alt="met nyc" class="rotate-90"/>
+            </div>
+            <div class="photo-back" style="color:#333">
+                <p>I like New York because it's busy. I love New York because even amidst the chaos, I still have my go-to spots where I can find peace. Like by the fountain at the MET, typically with a book and sushi handrolls from my favourite spot.</p>
+            </div>
+          </div>
+        </div>
+        <p class="art-description">New York, NY</p>
+      </div>
+
+      <div class="art-item">
+        <div class="photo photo-rotated">
+          <div class="photo-inner">
+            <div class="photo-front">
+              <img src="photos/places/2.jpg" alt="wellesley" class="rotate-90"/>
+            </div>
+            <div class="photo-back">
+                <p>This must've been taken on one of my many walks back from Sci, typically right after class or cranking out a PSet. I can still hear the birds chirping and feel this very sun on my skin if I close my eyes. It reminds me that no matter how busy life gets, I just need to breathe.
+            </div>
+          </div>
+        </div>
+        <p class="art-description">Wellesley, MA</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.photo').forEach(photo => {
+      photo.addEventListener('click', () => {
+        photo.classList.toggle('flipped');
+      });
+    });
+  </script>
+</body>
+</html>

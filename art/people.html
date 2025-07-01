@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>capturing it</title>
+  <link rel="stylesheet" type="text/css" href="art-styles.css" />
+</head>
+<body>
+  <a href="capture-it.html" class="back-link">back</a>
+
+  <div class="title">
+    <h1>people</h1>
+    <h2>some of the people who take up my heart.</h2>
+  </div>
+
+  <div class="art-showcase">
+    <div class="art-section">
+
+      <div class="art-item">
+        <div class="photo">
+          <div class="photo-inner">
+            <div class="photo-front">
+              <img src="photos/people/1.jpg" alt="girls in barcelona" />
+            </div>
+            <div class="photo-back" style="color:#333">
+                <p>E, myself, R, and C.</br>
+                This is probably the first film photo I have of myself turning 22. No better way to spend it then with my favourite girls from my semester abroad roaming the streets of a new city.</p>
+            </div>
+          </div>
+        </div>
+        <p class="art-description">Barcelona, Spain</p>
+      </div>
+
+      <div class="art-item">
+        <div class="photo">
+          <div class="photo-inner">
+            <div class="photo-front">
+              <img src="photos/people/2.jpg" alt="reunion" />
+            </div>
+            <div class="photo-back">
+                <p>C, K, and N.<br> 
+                    This was our first meal together since N had moved to a new city and we hadn't been in touch for months. The moment we sat down, it was like nothing had changed. I hope that no matter where life takes us, it will always be this way.</p>
+            </div>
+          </div>
+        </div>
+        <p class="art-description">Seaport, Boston, MA</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.photo').forEach(photo => {
+      photo.addEventListener('click', () => {
+        photo.classList.toggle('flipped');
+      });
+    });
+  </script>
+</body>
+</html>
