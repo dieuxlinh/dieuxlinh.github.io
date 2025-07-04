@@ -100,8 +100,10 @@ a:active {
 .art-item {
     margin: 10px 20px;
     text-align: center;
-    align-items: center;
-    max-width: 350px;
+    max-width: 360px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
 .art-item img {
@@ -112,15 +114,11 @@ a:active {
 }
 
 .art-description {
-    display: block;
-    width: 100%;
-    margin: 10px auto 0 auto;
-    font-size: 14px;
-    font-family: 'Made Mirage Thin', 'sans-serif';
-    color: rgba(255, 255, 255, 0.6);
+    width: auto;
+    max-width: 360px;
+    margin: 5px 0 0 0; 
     text-align: center;
 }
-
 
 .inspiration {
     color: white;
