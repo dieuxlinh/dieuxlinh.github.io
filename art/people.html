@@ -282,43 +282,62 @@
   </div>
 
   <script type="module">
-    import { PASSWORD } from '../secret.js';
-  
-    (function() {
-      const modal = document.getElementById('password-modal');
-      const input = document.getElementById('password-input');
-      const submit = document.getElementById('password-submit');
-      const errorMsg = document.getElementById('password-error');
-  
-      function checkPassword() {
-        const value = input.value.trim().toLowerCase();
-        if (value === PASSWORD.toLowerCase()) {
-          modal.style.display = 'none';
-          document.body.style.overflow = 'auto';
-        } else {
-          errorMsg.style.display = 'block';
-          input.value = '';
-          input.focus();
-        }
+    const hashOfPassword = '0e91ae5c1a83c378268a4f05f751e7c6e2d93a69493d0fbb336ed79dcf9a48f6';
+    
+    const modal = document.getElementById('password-modal');
+    const input = document.getElementById('password-input');
+    const submit = document.getElementById('password-submit');
+    const errorMsg = document.getElementById('password-error');
+    
+    document.body.style.overflow = 'hidden';
+    
+    async function sha256(str) {
+      const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+      return Array.from(new Uint8Array(buf))
+          .map(b => b.toString(16).padStart(2, '0'))
+          .join('');
+    }
+    
+    async function checkPassword() {
+      const value = input.value.trim().toLowerCase();
+      const hashedInput = await sha256(value);
+    
+      console.log(`User input: "${value}"`);
+      console.log(`Hashed input: ${hashedInput}`);
+      console.log(`Expected: ${hashOfPassword}`);
+    
+      if (hashedInput === hashOfPassword) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      } else {
+        errorMsg.style.display = 'block';
+        input.value = '';
+        input.focus();
+        document.body.insertAdjacentHTML('beforeend',
+          `<div style="color:white;position:fixed;bottom:0;left:0;background:#222;padding:5px;">
+            Debug: entered="${value}"<br>hash="${hashedInput}"
+          </div>`);
       }
-  
-      submit.addEventListener('click', checkPassword);
-      input.addEventListener('keyup', (e) => {
-        if (e.key === 'Enter') {
-          checkPassword();
-        }
+    }
+    
+    submit.addEventListener('click', () => {
+      checkPassword();
+    });
+    
+    input.addEventListener('keyup', (e) => {
+      if (e.key === 'Enter') {
+        checkPassword();
+      }
+    });
+    
+    // photo flip logic
+    document.querySelectorAll('.photo').forEach(photo => {
+      photo.addEventListener('click', () => {
+        photo.classList.toggle('flipped');
       });
-  
-      document.body.style.overflow = 'hidden';
-  
-      document.querySelectorAll('.photo').forEach(photo => {
-        photo.addEventListener('click', () => {
-          photo.classList.toggle('flipped');
-        });
-      });
-    })();
-  </script>
-  
+    });
+    </script>
+    
 </body>
 </html>
 </body>
