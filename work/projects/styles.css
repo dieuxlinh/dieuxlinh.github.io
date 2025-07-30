@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Made Mirage';
+    src: url('fonts/made-mirage/made-mirage-regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Made Mirage Thin';
+    src: url('fonts/made-mirage/made-mirage-thin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    overflow-y: auto;
+    padding: 120px;
+    font-family: 'Made Mirage', 'sans-serif';
+}
+
+.title {
+    color: white;
+    margin: 20px 0;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+
+.title h1, .title h2 {
+    font-family: 'Made Mirage', 'sans-serif';
+    margin: 0;
+    color: inherit;
+}
+
+.title h1 {
+    font-size: 40px;
+    opacity: 0.6;
+}
+
+.title h2 {
+    font-size: 30px;
+    opacity: 0.4;
+    color: white;
+}
+
+.title p {
+    margin: 5px 0;
+    color: white;
+    font-family: 'Made Mirage', 'sans-serif';
+    font-size: 16px;
+    opacity: 0.6;
+    max-width: 800px;
+    text-align: left;
+}
+
+
+
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Made Mirage', 'sans-serif';
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    margin-top: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 90px;
+}
+
+.text-content {
+    max-width: 600px;
+    margin-right: 100px;
+}
+
+.horizontal-nav {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    font-family: inherit;
+  }
+  
+  .horizontal-nav a {
+    margin: 0 0.4rem;
+    text-decoration: none;
+    color: var(--text-color); /* or a specific hex like #333 */
+  }
+  
+  .horizontal-nav a:hover {
+    text-decoration: underline;
+  }
+  
+h1 {
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 1px;
+    text-align: left;
+    font-family: 'Made Mirage', 'sans-serif';
+}
+
+p {
+    font-size: 15px;
+    margin-bottom: 2px;
+    font-family: 'Made Mirage', 'sans-serif';
+}
+
+a {
+    color: rgb(171, 171, 171);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: 'Made Mirage', 'sans-serif';
+}
+
+a:hover,
+a:active {
+    color: #ff9690;
+    text-decoration: none;
+}
+
+.bottom-margin {
+    margin-bottom: 20px;
+}
+
+.back-link {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    color: rgb(171, 171, 171);
+    text-decoration: none;
+    font-family: 'Made Mirage', 'sans-serif';
+    transition: color 0.3s;
+}
+
+.back-link:hover {
+    color: #ff9690;
+}
+.photo-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.photo {  
+    max-width: 500px; 
+    height: auto;       
+    opacity: 0.9; 
+}
+
+.explanation {
+    color: #ff9690; 
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    padding-left: 1rem;
+    border-left: 3px solid #ff9690;
+    font-style: italic;
+  }
+  
+  .download-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .download-item {
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .download-icon {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    align-items: center;
+  }
+  
+  .download-icon:hover {
+    transform: scale(1.05);
+  }
+  
+
+@media screen and (max-width: 768px) {
+    .photo {
+        width: 100%;
+        max-width: 100%;
+    }
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .text-content {
+        margin-right: 0;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .back-link {
+        top: 70px;
+        right: 30px;
+        color: rgb(171, 171, 171);
+    }
+
+    .back-link:hover,
+    .back-link:active {
+        color: #ff9690;
+    }
+
+}
