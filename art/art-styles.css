@@ -7,15 +7,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Made Mirage Thin';
-    src: url('fonts/made-mirage/made-mirage-thin.woff2') format('woff2'),
-         url('fonts/made-mirage/made-mirage-thin.woff') format('woff'),
-         url('fonts/made-mirage/made-mirage-thin.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
     display: flex;
     flex-direction: column;
