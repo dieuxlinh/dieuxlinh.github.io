@@ -10,20 +10,20 @@
     font-style: normal;
 }
 
-
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    min-height: 100vh;
     background-color: #1a1a1a;
     color: white;
     font-family: 'Made Mirage', 'sans-serif';
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
+    overflow-y: auto;
     margin-top: 30px;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom: 90px;
+    padding: 120px 20% 90px 20%;
 }
+
 
 .title {
     color: white;
@@ -59,7 +59,6 @@ body {
     max-width: 800px;
     text-align: left;
 }
-
 
 .text-content {
     max-width: 600px;
