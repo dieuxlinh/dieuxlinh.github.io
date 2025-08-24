@@ -97,6 +97,12 @@ p {
     font-family: 'Made Mirage', 'sans-serif';
 }
 
+ul li {
+    font-size: 15px !important;
+    font-family: 'Made Mirage', sans-serif !important;
+    color: white !important;
+  }
+
 a {
     color: rgb(171, 171, 171);
     text-decoration: none;

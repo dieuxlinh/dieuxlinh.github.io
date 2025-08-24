@@ -14,48 +14,82 @@
         <p>special thanks to <i>Isabella (Project Lead), Maya, Parker, Jon, Jonathan, Jimmy, and others</i> for being my debugging heroes.</p>
     </div>
 
-    <section id="overview">
-        <h2>overview</h2>
+    <nav class="horizontal-nav">
+        <a href="#summary">Project Summary</a> · 
+        <a href="#book-details">Details</a> · 
+        <a href="#importance">Why</a> · 
+        <a href="#pilot">Impact</a>
+      </nav>
+
+    <section id="summary">
+        <h2>Project Summary</h2>
         <p>
             At the intersection of artificial intelligence (AI), education, and creativity, my work focuses on empowering young students with the foundational knowledge of AI and coding through engaging, interactive storybooks. This project, part of the <em>Personal Robots Group</em> at MIT’s <em>Media Lab</em>, uses storytelling, coding, and robot interactions to teach early AI literacy to children in grades K-3.
         </p>
         <p>
             In today’s world, kids are surrounded by AI-powered devices—tablets, smartphones, and even social media. But despite their exposure to AI-generated content, there’s a lack of resources tailored to young learners, especially in primary education. That’s where our project steps in. We're building a series of online interactive storybooks that introduce young learners to AI, machine learning (ML), robotics, and coding in a fun and approachable way.
         </p>
-        <p></p>
+
+        <div class="explanation">
+            <p>
+                From a project management, development, and research standpoint, this work required balancing technical development with learning goals. We scoped the project around co-design with young learners and educators, iterating on real-world feedback instead of assuming what kids need. I took the lead on user testing, conducting 100+ tests on children at the Museum of Science in Boston.
+            </p> 
+        </div>
+        
     </section>
+    <br>
     <div class="photo-container">
         <img src="photos/storybook.png" class="photo" alt="Cover of the interactive storybook">
-        <img src="photos/dance.png" class="photo" alt="Cover of the interactive storybook">
     </div>
     <section id="book-details">
-        <h2>details</h2>
+        <h2>Details</h2>
         
         <p>
-            The storybooks center around <strong>Doodlebot</strong>, a robot with dreams of becoming an artist. Through a series of ten books, students follow Doodlebot’s journey as they help it learn new skills, such as dancing, reading, and even creating art. These skills are introduced through simple coding and machine learning principles.
+            The storybooks center around <strong>Doodlebot</strong>, a robot with dreams of becoming an artist. Through a series of ten books, students follow Doodlebot’s journey as they help it learn new skills, such as dancing, reading, and even creating art. These skills are introduced through simple coding and AI/ML principles.
         </p>
         <p>
             Each book presents a new AI or robotics concept, with minigames and interactive dialogue that allow students to engage with the content actively. By helping Doodlebot, students gain hands-on experience with the basics of coding, robotics, AI ethics, and more.
         </p>
-    
-        <ul>
-            <li><strong>Early books:</strong> Focus on foundational concepts like robotics, AI, and coding.</li>
-            <li><strong>Later books:</strong> Dive into more advanced topics like machine learning, affective computing, and the ethical questions surrounding AI.</li>
-        </ul>
         <p>
             To make these lessons even more immersive, the books are paired with social robot interactions. These robots follow the student's usage of the storybooks, helping to reinforce key lessons and giving children a chance to code directly with the robot. The robots ask students questions, offer feedback, and guide them through creative activities.
         </p>
-    </section>
+    
+        <ul>
+            <li><strong>Early books:</strong> Focus on foundational concepts like robotics, AI, and coding.</li>
+            <li><strong>Later books:</strong> Dive into more advanced topics like ML, affective computing, and the ethical questions surrounding AI.</li>
+        </ul>
+
+        <div class="photo-container">
+            <img src="photos/dance.png" class="photo" alt="Cover of the interactive storybook">
+        </div>
+
+        <div class="explanation">
+            <p>
+                From a design and development perspective, the Doodlebot storybooks embody a deliberate scaffolded learning experience. Starting with simple coding and robotics concepts, we built a narrative arc over ten books that gradually introduces more complex topics like ML and ethical considerations. This progressive structure was informed by collaboration with educators to ensure age-appropriate pacing.
+            </p>
+            <p>
+                On the engineering side, I built interactive story content using <strong>Svelte, React, and JavaScript</strong>, choosing tools that allowed for fast prototyping and low-overhead iteration. Each component was designed for modularity, enabling us to test and update individual activities based on pilot feedback.
+            </p> 
+            <p>
+                We also used <strong>ROSBridge</strong> to connect the storybooks to social robots, creating embodied experiences where the robot could react to student choices and help guide the lesson. This integration added both technical complexity and educational depth — making abstract ideas like machine learning feel grounded and real.
+            </p>
+            <p>
+                From a research standpoint, pairing our UI with <strong>Firebase</strong> enabled us to collect real-time interaction data — like features students loved or games they needed a few tries to grasp learning concepts — which gave us concrete insight into how kids were navigating the storybooks. These logs directly informed design improvements and helped validate learning goals.
+            </p> 
+        </div>
+
+
+</section>
 
     <section id="importance">
-        <h2>why</h2>
+        <h2>Why</h2>
         <p>
-            The importance of teaching children about AI is clear: As technology becomes an integral part of their lives, it's vital they develop informed opinions and understanding. By learning about AI early on, kids are better equipped to navigate its presence in the world around them. But more importantly, they gain agency—they understand not just how AI works, but how they can use it creatively and responsibly.
+            The importance of teaching children about AI is clear: As technology becomes an integral part of their lives, it's vital they develop informed opinions and understanding. By learning about AI early on, kids are better equipped to navigate its presence in the world around them. But more importantly, they gain agency. Through exposure, they understand not just how AI works, but how they can use it creatively and responsibly.
         </p>
     </section>
 
     <section id="pilot">
-        <h2>impact</h2>
+        <h2>Impact</h2>
         <p>
             We’ve conducted pilot studies with nearly 50 students at <a href="https://www.westeamahead.org/programs" target="_blank">Boston’s STEAM Ahead Academy</a> and iterated on our designs through comments from participants at the <a href="https://www.mos.org/" target="_blank">Boston Museum of Science</a>. The feedback has been invaluable, showing that the storybooks successfully engage and educate students in grades 1-3.
         </p>
@@ -65,7 +99,12 @@
         <p></p>
     </section>
     <div class="photo-container">
-        <img src="photos/children.jpg" class="photo2" alt="Children engaged with AI learning">
+        <img src="photos/children.jpg" class="photo" alt="Children engaged with AI learning">
     </div>
-</body>
+    <div class="explanation">
+        <p>Ultimately, this impact phase taught me the value of cross-disciplinary collaboration, honing my ability to work closely with educators, engineers, and researchers. It strengthened my skills in iterative user testing and data-driven decision-making, enabling me to refine designs based on real-world feedback. Most importantly, it reinforced the importance of measuring clear outcomes to ensure that educational tools truly make a difference.
+        </p>
+    </div>
+
+    </body>
 </html>

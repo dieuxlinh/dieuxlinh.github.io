@@ -55,8 +55,7 @@ body {
     max-width: 800px;
     text-align: left;
 }
-
-
+  
 
 body {
     background-color: #1a1a1a;
@@ -77,6 +76,24 @@ body {
     margin-right: 100px;
 }
 
+.horizontal-nav {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    font-family: inherit;
+  }
+  
+  .horizontal-nav a {
+    margin: 0 0.4rem;
+    text-decoration: none;
+    color: var(--text-color); 
+  }
+  
+  .horizontal-nav a:hover {
+    text-decoration: underline;
+  }
+
 h1 {
     font-size: 40px;
     margin-top: 60px;
@@ -90,6 +107,12 @@ p {
     margin-bottom: 2px;
     font-family: 'Made Mirage', 'sans-serif';
 }
+
+ul li {
+    font-size: 15px !important;
+    font-family: 'Made Mirage', sans-serif !important;
+    color: white !important;
+  }
 
 a {
     color: rgb(171, 171, 171);
@@ -107,6 +130,15 @@ a:active {
 .bottom-margin {
     margin-bottom: 20px;
 }
+
+.explanation {
+    color: #ff9690; 
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    padding-left: 1rem;
+    border-left: 3px solid #ff9690;
+    font-style: italic;
+  }
 
 .back-link {
     position: absolute;
@@ -129,16 +161,8 @@ a:active {
     flex-wrap: wrap;
 }
 .photo {
-    width: 45%;          
+    width: 80%;          
     max-width: 600px; 
-    height: auto;       
-    border-radius: 8px;  
-    opacity: 0.9; 
-}
-
-.photo2 {
-    width: 45%;          
-    max-width: 1000px; 
     height: auto;       
     border-radius: 8px;  
     opacity: 0.9; 
