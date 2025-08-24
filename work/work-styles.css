@@ -64,26 +64,6 @@ a:active {
     color: #ff9690;
 }
 
-
-body {
-    background-color: #1a1a1a;
-    color: white;
-    font-family: 'Made Mirage', 'sans-serif';
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
-    margin-top: 30px;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom: 90px;
-}
-
-
-.bottom-margin {
-    margin-bottom: 20px;
-}
-
 .back-link {
     position: absolute;
     top: 50px;
@@ -98,30 +78,45 @@ body {
     color: #ff9690;
 }
 
+
 .project-showcase {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 50px;
-    margin-top: 60px;
-    flex-wrap: nowrap;
+    margin-top: 100px;
+}
+
+.project-showcase p {
+    color: white;
+    font-family: 'Made Mirage', 'sans-serif';
+    font-size: 16px;
+    opacity: 0.6;
+    max-width: 800px;
+    text-align: center;
+}
+
+.project-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -30px;
+    gap: 15px 10px;
 }
 
 .project-item {
-    flex: 0 1 calc(40% - 10px);
+    flex: 0 1 calc(40% - 10px); 
     text-align: left;
     margin-bottom: 30px;
     max-width: 300px;
 }
 
 .project-item img {
-    width: 300px;
+    width: 100%;
     height: auto;
     border-radius: 0;
     box-shadow: none;
     display: block;
 }
-
 
 .project-title {
     font-size: 30px;
@@ -144,40 +139,34 @@ body {
 
 
 @media screen and (max-width: 768px) {
-    .photo {
-        width: 100%;
-        max-width: 100%;
-    }
-    body {
-        padding-left: 5%;
-        padding-right: 5%;
-        margin-top: 0px;
-        margin-left: 20px;
+    .title {
+        left: 20px;
     }
 
-    .profile-section {
+    .project-item {
+        flex: 0 1 100%;
+    }
+
+    .subtitle, .subtitle2, .subtitle3 {
+        left: 20px;
+    }
+
+    .subtitle p, .subtitle2 p, .subtitle3 p {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+
+    .container {
+        margin: 20px 0;
         flex-direction: column;
         align-items: center;
         max-width: 100%;
-    }
-
-    .text-content {
         margin-right: 0;
-        max-width: 100%;
-        text-align: left;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
-
-    p {
-        font-size: 14px;
     }
 
     .back-link {
-        top: 70px;
-        right: 30px;
+        top: 45px;
+        right: 20px;
         color: rgb(171, 171, 171);
     }
 
@@ -186,4 +175,15 @@ body {
         color: #ff9690;
     }
 
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .title h2 {
+        font-size: 24px;
+    }
+
+    .container {
+        align-items: center;
+    }
 }
