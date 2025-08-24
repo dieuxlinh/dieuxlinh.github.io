@@ -92,15 +92,15 @@ export const countryInfo = {
       "<span class='small-font'>⟡ Stratford-Upon-Avon, Cambridge, Stonehenge, Edinburgh, Cardiff</span><br>" +
       "<span class='small-font'>⋆˙ London</span><br>" +
       "<span class='small-font'>♡ Oxford (Shoutout: Sophia)</span><br><div style='height: 10px'></div>"+
-      "Preface: I loved the UK. Loved. And yet, I will proceed to sound like a hater. And that's because it's true, I am hating on London. Not sorry. "+
-      "London is New York’s more annoying, louder, smellier, more stubborn younger brother who talks weird and yes,"+
+      "Preface: I loved the UK. Loved. And yet, I will proceed to sound like a hater. And that's because it's true. I am hating on London. Not sorry. <br><div style='height: 10px'></div>"+
+      "London is New York’s more annoying, louder, smellier, more stubborn younger brother who talks weird and yes, "+
       "I've been to New York a bazillion times (like 10) to know what it's really like. "+ 
       "Also I specifically say younger brother because I have younger sisters who have grown out of that phase "+
       "(not entirely yet, but I see the progress) "+
       "where as if I had had a younger brother I have no faith that he would. <br> <div style='height: 10px'></div>"+
 
-      "I have never had an allergic reaction to anything ever before in my twenty two years of life, and yet I thought I was genuinely going to die"+ 
-      "when I wandered Regent's Park my first morning there due to hayfever. Before my eyes started watering and I couldn’t breathe, however,"+
+      "I have never had an allergic reaction to anything ever before in my twenty two years of life, and yet I thought I was genuinely going to die "+ 
+      "when I wandered Regent's Park my first morning there due to hayfever. Before my eyes started watering and I couldn’t breathe, however, "+
       "the park and the swans were very pretty I suppose. <br> <div style='height: 10px'></div>"+
 
       "Highs: Spending a few days making up for lost time with Sophia in Oxford (Oxford > Cambrigde)."+
