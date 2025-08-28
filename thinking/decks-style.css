@@ -89,13 +89,13 @@ body {
 /* Paragraph styling */
 .inspiration {
     color: white;
-    margin-top: 50px; /* Space above the paragraph */
-    font-family: 'Made Mirage', 'sans-serif'; /* Ensure the same font is applied */
-    font-size: 15px; /* Font size for the paragraph */
-    line-height: 1.5; /* Improve readability */
-    text-align: left; /* Center align the paragraph */
-    max-width: 800px; /* Limit width for better readability */
-    margin-left: 50px; /* Centering the paragraph */
+    margin-top: 50px;
+    font-family: 'Made Mirage', 'sans-serif'; 
+    font-size: 15px; 
+    line-height: 1.5; 
+    text-align: left;
+    max-width: 600px;
+    margin-left: 50px;
     opacity: 0.5;
 }
 
