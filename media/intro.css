@@ -2,7 +2,9 @@
 
 @font-face {
   font-family: 'Made Mirage';
-  src: url('/fonts/made-mirage.ttf') format('truetype');
+  src: url('../fonts/made-mirage/made-mirage-regular.woff2') format('woff2'),
+       url('../fonts/made-mirage/made-mirage-regular.woff') format('woff'),
+       url('../fonts/made-mirage/made-mirage.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
