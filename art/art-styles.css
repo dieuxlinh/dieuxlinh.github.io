@@ -91,15 +91,15 @@ a:active {
 .art-item {
     margin: 10px 20px;
     text-align: center;
-    max-width: 360px; 
+    max-width: 360px;
     display: flex;
     flex-direction: column;
     align-items: center; 
 }
 
 .art-item img {
-    width: 100%;
-    height: auto;
+    width: 360px;
+    height: 700px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
