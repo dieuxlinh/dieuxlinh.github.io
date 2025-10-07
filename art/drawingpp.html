@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>drawing++</title>
+  <link rel="icon" href="images/my-icon.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="art-styles.css" />
+</head>
+<body>
+  <a href="making-art.html" class="back-link">back</a>
+
+  <div class="title">
+    <h1>drawing++</h1>
+    <h2>where art meets computation.</h2>
+  </div>
+
+  <div class="art-showcase">
+    <div class="art-section">
+
+      <div class="art-item">
+        <div class="photo photo-big">
+          <div class="photo-inner">
+            <div class="photo-front">
+              <img src="artworks/drawingpp/dear_data_v.png" alt="dear data"/>
+            </div>
+            <div class="photo-back" style="color:#333">
+                <p>Inspired by a series of postcards exchanged by <a href="https://www.dear-data.com/theproject" target="_blank">Lupi and Posavec</a> that creatively represents data, my class partner and I each documented how we spent time over a weekend. 
+                  
+                  <br><br> When I think about how I want to spend my time, productivity often comes to mind. But the moments that stay with me—watching the northern lights with friends, stargazing in the Sahara, tracing constellations from my window—are the unproductive ones.
+
+                  I often feel caught between work and play, questioning whether I’m using my time wisely. Whether I’m studying through a beautiful sunset or out with friends while deadlines loom, the tension is always there. But I’ve started to believe that maybe my twenties are meant for "wasting time," as Billy Joel said, “You can afford to lose a day or two.”
+
+                  Some of the most meaningful experiences have been unplanned—spur-of-the-moment adventures that didn’t look special on paper. I find clarity in reflection, often writing down my thoughts daily. And through that, I’ve realised I genuinely love how I spend my time: learning, working, being with friends, or simply alone. <br>
+                  
+                  <br>I've also come to realise that time spent loving — whatever that looks like — is never wasted.</p>
+                </div>
+          </div>
+        </div>
+        <p class="art-description">dear data</p>
+      </div>
+
+      <div class="art-item">
+        <div class="photo photo-big">
+          <div class="photo-inner">
+            <div class="photo-front">
+              <img src="artworks/drawingpp/memory.png" alt="memory"/>
+            </div>
+            <div class="photo-back" style="color:#333">
+                <p>When tasked with doing a drawing from memory, I knew I wanted to capture Hanoi. I was born in Hanoi, and when I was just six months old, my parents moved us to Saigon. Somehow, both cities have always felt like home. Maybe it’s because I’m greedy, or maybe it’s because every summer and every Tết, we’d return to Hanoi—to the family, the stories, and especially to my maternal grandparents.
+
+                  We moved around a lot growing up. Unlike most people, I don’t have a clear memory of a childhood bedroom or a single place I can point to and say, that’s where I grew up. But there’s a small, five-story house in Hanoi that raised me—if only for a few months at a time. That house holds more of my childhood than any other place. It’s one of only two addresses I know by heart in Hanoi.
+
+                  About fourteen years ago, my grandparents sold it when they moved to Saigon to be closer to us. The locks changed. Another child now grows up within those same walls. Still, every time I’m in Hanoi, I go back. The alleyways feel smaller now, the street quieter. No familiar faces remain. But the memories are stubborn. The house still means something. It always will.
+
+                  I know this map might not be perfectly accurate—I haven’t let myself double-check. I’m not sure I want to. What matters is that it’s the truest version I can remember.</p>
+                </div>
+          </div>
+        </div>
+        <p class="art-description">down memory lane</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.photo').forEach(photo => {
+      photo.addEventListener('click', () => {
+        photo.classList.toggle('flipped');
+      });
+    });
+  </script>
+</body>
+</html>
