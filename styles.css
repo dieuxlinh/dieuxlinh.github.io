@@ -27,6 +27,10 @@ body {
     max-width: 800px; /* Container width to accommodate text and image */
 }
 
+.section-right {
+    text-align: right;
+}
+
 .text-content {
     max-width: 600px;
     margin-right: 100px; /* Space between text and image */
