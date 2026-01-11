@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     justify-content: left;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 10px;
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 90px; /* Added padding to the bottom */
@@ -38,7 +38,7 @@ body {
 
 h1 {
     font-size: 40px;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 1px;
     text-align: left; /* Left-aligning h1 text */
     font-family: 'Made Mirage', 'sans-serif';
