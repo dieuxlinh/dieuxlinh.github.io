@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linh's portfolio</title>
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="stylesheet" href="portfolio-styles.css">
+</head>
+<body>
+    <a href="https://dieuxlinh.github.io" class="back-link">home</a>
+    
+    <div class="title">
+        <h1>hi, i'm linh!</h1>
+        <h1>i'm a <span id="scramble-text"></span></h1>
+    </div>
+
+    <script>
+        const phrases = [
+            "recent grad from wellesley college",
+            "computer scientist",
+            "creative technologist",
+            "former ai + edtech researcher at mit media lab",
+            "former ogilvy account executive intern",
+            "former journalist-wannabe"
+        ];
+
+        const letters = "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+-=[]{}<>?"; 
+        const target = document.getElementById("scramble-text");
+
+        let phraseIndex = 0;
+        let frame = 0;
+        let interval = null;
+
+        function scrambleToText(newText) {
+            const maxLength = Math.max(target.innerText.length, newText.length);
+            frame = 0;
+            target.classList.remove("scramble-resolved"); // remove resolved style during scramble
+
+            clearInterval(interval);
+            interval = setInterval(() => {
+                let output = "";
+
+                for (let i = 0; i < maxLength; i++) {
+                    if (i < frame) {
+                        output += newText[i] || "";
+                    } else {
+                        output += letters[Math.floor(Math.random() * letters.length)];
+                    }
+                }
+
+                target.innerText = output;
+
+                if (frame >= newText.length) {
+                    clearInterval(interval);
+                    target.innerText = newText;
+                    target.classList.add("scramble-resolved"); // subtle opacity change when settled
+
+                    // pause before next phrase
+                    setTimeout(() => {
+                        phraseIndex = (phraseIndex + 1) % phrases.length;
+                        scrambleToText(phrases[phraseIndex]);
+                    }, 1500); // 1.5s pause
+                }
+
+                frame++;
+            }, 40); // 40ms per frame, tweak for speed
+        }
+
+        // start animation
+        scrambleToText(phrases[phraseIndex]);
+        </script>
+
+    <div class="tag-filter">
+        <div class="tag-row" data-type="tech">
+            <span class="tag filter-tag" data-tag="python">python</span>
+            <span class="tag filter-tag" data-tag="html/css">html/css</span>
+            <span class="tag filter-tag" data-tag="javascript">javascript</span>
+            <span class="tag filter-tag" data-tag="svelte">svelte</span>
+            <span class="tag filter-tag" data-tag="p5">p5.js</span>
+            <span class="tag filter-tag" data-tag="full-stack">full-stack</span>
+        </div>
+
+        <div class="tag-row" data-type="location">
+
+            <span
+                class="tag filter-tag has-blurb"
+                data-tag="mit-media-lab"
+                data-blurb="cynthia breazeal’s personal robots group at the mit media lab. 
+                research conducted over four semesters. focuses on educational technology, ai literacy, and expanding access to computing for underserved youth. big thank you to the engineers, educators, and roboticists who shaped my growth as a researcher, and especially to my supervisor, p.h.d. student isabella pu. go robots!">
+                mit media lab
+            </span>
+
+            <span
+                class="tag filter-tag has-blurb"
+                data-tag="drawing++"
+                data-blurb="zach lieberman’s drawing and computation course. 
+                featuring weekly projects created as the only undergraduate student in the course. immense thanks to zach for rekindling my love for coding and bringing in the coolest guest speakers.">
+                drawing++
+            </span>
+
+            <span
+                class="tag filter-tag has-blurb"
+                data-tag="personal"
+                data-blurb="self-initiated projects.
+                little things started whenever i needed to remind myself that coding can be, and should be, fun.">
+                personal
+            </span>
+
+            <span
+                class="tag filter-tag has-blurb"
+                data-tag="coursework"
+                data-blurb="developed during my time at wellesley, olin college of engineering, and mit. 
+                selected works reflect structured exploration across computer science, engineering, and creative computation through a user-centric lens.">
+                coursework
+            </span>
+
+            <span
+                class="tag filter-tag has-blurb"
+                data-tag="ogilvy"
+                data-blurb="account executive intern at ogilvy during my gap year. 
+                featured campaigns i supported that were nationally launched in vietnam. collaborated closely with strategists, creatives, and clients. very grateful to my team and to an agency that trusted an 18 year old with no experience for things that millions saw.">
+                ogilvy
+            </span>
+
+            <span
+                class="tag filter-tag has-blurb"
+                data-tag="published"
+                data-blurb="published research papers & brief stints in journalism at vietcetera and musée magazine.
+                taught me that while answering questions matters, learning how—and when—to ask the right questions matters just as much, if not more.">
+                published
+            </span>
+
+            <span
+                class="tag filter-tag has-blurb"
+                data-tag="analog"
+                data-blurb="feeble attempts to reduce screen time as a chronically online computer scientist. 
+                still working on it...">
+                analog
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="project-showcase">
+        <div class="project-section">
+
+            <div class="project-item">
+                <a href="../projects/prg.html" target="blank" class="project-link">
+
+                    <div class="project-text">
+                        <h2 class="project-title">interactive ai storybook</h2>
+                        <p class="project-description">
+                            conducted user testing with 200+ children ages 5-9 at boston's museum of science.<br>
+                            piloted with 50+ students in week-long sessions at boston steam ahead academies.
+                        </p>
+
+                        <div class="project-tags">
+                            <span class="tag filter-tag" data-tag="javascript">javascript</span>
+                            <span class="tag filter-tag" data-tag="svelte">svelte</span>
+                            <span class="tag filter-tag" data-tag="full-stack">full-stack</span>
+                            <span class="tag filter-tag" data-tag="mit-media-lab">mit media lab</span>
+                        </div>
+                    </div>
+
+                    <div class="project-image">
+                        <img src="buttons/storybook.png" alt="interactive ai storybook">
+                    </div>
+
+                </a>
+            </div>
+
+            <div class="project-item">
+                <a href="../projects/prg.html" target="blank" class="project-link">
+                    <div class="project-text">
+                        <h2 class="project-title">creative confidence</h2>
+                        <p class="project-description">
+                            high level functioning prototypes of web ai brainstorming tool, to be used for studies on if ai hinders or helps children's creativity.
+                        </p>
+
+                        <div class="project-tags">
+                            <span class="tag filter-tag" data-tag="javascript">javascript</span>
+                            <span class="tag filter-tag" data-tag="svelte">svelte</span>
+                            <span class="tag filter-tag" data-tag="full-stack">full-stack</span>
+                            <span class="tag filter-tag" data-tag="mit-media-lab">mit media lab</span>
+                        </div>
+                    </div>
+
+                    <div class="project-image">
+                        <img src="buttons/mywebsite-icon.png" alt="Portfolio Website">
+                    </div>
+
+                </a>
+            </div>
+
+            <div class="project-item">
+                <a href="https://www.canva.com/design/DAG6YynLGD0/Af3JFWER4R2PNrFrvE2D0Q/edit?utm_content=DAG6YynLGD0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="project-link">
+                    
+                    <div class="project-text">
+                        <h2 class="project-title">nhớ</h2>
+                        <p class="project-description">
+                           "In Vietnamese, the word for missing someone and remembering them is the same: nhớ... I miss you more than I remember you." - Ocean Vuong<br>
+                           an ode to all the places i've ever called home, coded & drawn on pen plotter.
+                        </p>
+
+                        <div class="project-tags">
+                            <span class="tag filter-tag" data-tag="javascript">python</span>
+                            <span class="tag filter-tag" data-tag="drawing++">drawing++</span>
+                        </div>
+                    </div>
+
+                    <div class="project-image">
+                        <img src="buttons/nho.jpg" alt="nho">
+                    </div>
+
+                </a>
+            </div>
+
+            <div class="project-item">
+                <a href="../projects/website.html" target="blank" class="project-link">
+                    
+                    <div class="project-text">
+                        <h2 class="project-title">eighteen in one seventy five</h2>
+                        <p class="project-description">
+                            interactive map and small travel diary snippets of all the 18 countries i visited while based in paris for my semester abroad.
+                        </p>
+
+                        <div class="project-tags">
+                            <span class="tag filter-tag" data-tag="html/css">html/css</span>
+                            <span class="tag filter-tag" data-tag="javascript">javascript</span>
+                            <span class="tag filter-tag" data-tag="personal">personal</span>
+                        </div>
+                    </div>
+
+                    <div class="project-image">
+                        <img src="buttons/studyabroad.gif" alt="study abroad">
+                    </div>
+
+                </a>
+            </div>
+
+            <div class="project-item">
+                <a href="../projects/website.html" target="blank" class="project-link">
+                    
+                    <div class="project-text">
+                        <h2 class="project-title">reading</h2>
+                        <p class="project-description">
+                            interactive page that lets you browse through my shelves.
+                        </p>
+
+                        <div class="project-tags">
+                            <span class="tag filter-tag" data-tag="html/css">html/css</span>
+                            <span class="tag filter-tag" data-tag="javascript">javascript</span>
+                            <span class="tag filter-tag" data-tag="personal">personal</span>
+                        </div>
+                    </div>
+
+                    <div class="project-image">
+                        <img src="buttons/reading.gif" alt="reading page">
+                    </div>
+
+                </a>
+            </div>
+
+            <div class="project-item">
+                <a href="../projects/little-listener.html" target="blank" class="project-link">
+                    
+                    <div class="project-text">
+                        <h2 class="project-title">littlelistener</h2>
+                        <p class="project-description">
+                            part of mit gordon engineering leadership program's course on design thinking and innovation for engineers.
+                            voice ai alexa program that connects children, teachers, and parents; user tested and iterated with feedback from real users.
+                        </p>
+
+                        <div class="project-tags">
+                            <span class="tag filter-tag" data-tag="full-stack">full-stack</span>
+                            <span class="tag filter-tag" data-tag="coursework">coursework</span>
+                        </div>
+                    </div>
+
+                    <div class="project-image">
+                        <img src="buttons/littlelistener.png" alt="littlelistener">
+                    </div>
+
+                </a>
+            </div>
+
+            <div class="project-item">
+                <a href="https://luludlpp.github.io/hungrychameleon/" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <div class="project-text">
+                        <h2 class="project-title">hungry chameleon</h2>
+                        <p class="project-description">
+                            interactive web game featuring hand drawn sprite components. developed in my software design and development course at olin, played by 60+ classmates.
+                        </p>
+
+                        <div class="project-tags">
+                            <span class="tag filter-tag" data-tag="html/css">html/css</span>
+                            <span class="tag filter-tag" data-tag="javascript">javascript</span>
+                            <span class="tag filter-tag" data-tag="coursework">coursework</span>
+                        </div>
+                    </div>
+
+                    <div class="project-image">
+                        <img src="buttons/hungry-chameleon.png" alt="hungry chameleon">
+                    </div>
+
+                </a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+// all top filter tags
+const filterTags = document.querySelectorAll('.filter-tag');
+// all projects
+const projects = document.querySelectorAll('.project-item');
+
+// function to filter projects by tag
+function filterProjects(tagValue) {
+  projects.forEach(project => {
+    const projectTags = Array.from(project.querySelectorAll('.project-tags .tag'))
+                             .map(t => t.dataset.tag.toLowerCase());
+
+    if (tagValue === 'all') {
+      project.style.display = '';
+    } else {
+      project.style.display = projectTags.includes(tagValue) ? '' : 'none';
+    }
+  });
+}
+
+// click listener for each top tag
+filterTags.forEach(tag => {
+  tag.addEventListener('click', () => {
+    const tagValue = tag.dataset.tag.toLowerCase();
+    const isActive = tag.classList.contains('active');
+
+    // remove 'active' from all tags
+    filterTags.forEach(t => t.classList.remove('active'));
+
+    if (isActive) {
+      // tag was active, so clear filter
+      filterProjects('all');
+    } else {
+      // tag was not active, filter projects
+      tag.classList.add('active');
+      filterProjects(tagValue);
+    }
+  });
+});
+
+</script>
+
