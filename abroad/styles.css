@@ -323,7 +323,9 @@ path:default {
         padding-left: 5%;
         padding-right: 5%;
         margin-top: 0px;
-        margin-left: 20px;
+        margin-left: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
     }
 
     .profile-section {
@@ -350,14 +352,14 @@ path:default {
     li {
         font-size: 14px;
     }
-    
+
     .quote {
-        color: #ff9690; 
+        color: #ff9690;
         font-size: 14px;
         font-style: italic;
         text-align: center;
       }
-    
+
       .footnotes {
         font-size: 11px;
         color: #666;
@@ -379,5 +381,58 @@ path:default {
     .pink {
         color: #ff9690;
     }
-    
+
+    .map-container {
+        overflow: visible;
+    }
+
+    .map-container svg {
+        width: 350%;
+        height: auto;
+        margin-left: -10%;
+        margin-top: -15%;
+        margin-bottom: -60%;
+        display: block;
+    }
+
+    .map p {
+        font-size: 11px;
+        margin-bottom: -20px;
+    }
+
+    .right {
+        position: static;
+        margin-top: 10px;
+        transform: none;
+    }
+
+    .panel {
+        width: 85%;
+        max-width: 85%;
+        height: auto;
+        min-height: 200px;
+        max-height: 400px;
+        padding: 0 20px;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+
+    .panel img {
+        max-width: 60%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .title {
+        left: 20px;
+    }
+
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .title h2 {
+        font-size: 24px;
+    }
 }

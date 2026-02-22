@@ -14,10 +14,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-    /* background-color: #450303; */
     overflow-y: auto;
+    overflow-x: hidden;
     padding: 40px;
     font-family: 'Made Mirage', 'sans-serif';
+    box-sizing: border-box;
 }
 
 .title {
@@ -274,20 +275,34 @@ a:active {
 
     .title p {
         font-size: 14px;
-        max-width: 95vw; 
+        max-width: 90%;
+    }
+
+    #scramble-text {
+        white-space: normal;
+        word-wrap: break-word;
+        min-width: 0;
+        max-width: 100%;
     }
 
     .back-link {
         top: 45px;
-        right: -65px;
+        right: 20px;
+    }
+
+    .project-showcase {
+        align-items: center;
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
     }
 
     .tag-filter {
         display: flex;
         flex-direction: column;
-        align-items: center; 
-        width: 250%; 
-        margin-top: 180px; 
+        align-items: center;
+        width: 100%;
+        margin-top: 180px;
         padding: 0 15px;
         box-sizing: border-box;
     }
@@ -308,7 +323,7 @@ a:active {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        max-width: 100vw; /* really full width */
+        max-width: 100%;
         margin: 0 auto;
         gap: 30px;
         padding: 0;
@@ -320,6 +335,7 @@ a:active {
 
     .project-link {
         display: grid;
+        grid-template-columns: 1fr;
         grid-template-areas:
             "title"
             "image"
@@ -327,10 +343,17 @@ a:active {
             "tags";
         row-gap: 5px;
         width: 100%;
-        max-width: 100%;    
-        margin: 0 auto;     
-        padding: 0 auto;    
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
         box-sizing: border-box;
+    }
+
+    .project-image {
+        grid-area: image;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     .project-text {
@@ -347,8 +370,8 @@ a:active {
 
     .project-image {
         grid-area: image;
-        width: 100%;       
-        max-width: 100vw; 
+        width: 100%;
+        max-width: 100%;
         margin: 0 auto;
     }
 
@@ -412,15 +435,15 @@ a:active {
 
     .back-link {
         top: 45px;
-        right: -275px;
+        right: 15px;
     }
 
     .tag-filter {
         display: flex;
         flex-direction: column;
-        align-items: center; 
-        width: 250%; 
-        margin-top: 140px; 
+        align-items: center;
+        width: 100%;
+        margin-top: 140px;
         padding: 0 15px;
         box-sizing: border-box;
         margin-bottom: 50px;
@@ -440,13 +463,13 @@ a:active {
 
     .project-showcase {
         display: flex;
-        align-items: center;  /* centers everything horizontally */
-        width: 100%;           /* fill the screen */
-        max-width: 100vw;      /* prevent horizontal overflow */
-        margin: 0 auto;        /* center container */
-        padding: 0 15px;       /* breathing room on sides */
-        box-sizing: border-box; 
-        gap: 30px;             /* space between project items */
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+        box-sizing: border-box;
+        gap: 30px;
     }
     
     .project-section {
@@ -473,8 +496,8 @@ a:active {
     .project-description,
     .project-tags,
     .project-image {
-        width: 100vw;     
-        max-width: 100vw; 
+        width: 100%;
+        max-width: 100%;
     }
 
     .project-image {

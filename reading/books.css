@@ -107,3 +107,14 @@ i {
 #p3 {
     z-index: 1;
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .book {
+        width: 200px;
+        height: 270px;
+    }
+}

@@ -93,7 +93,8 @@ a:hover {
         padding-left: 5%;
         padding-right: 5%;
         margin-top: 20px;
-        margin-left: 20px;
+        margin-left: 0;
+        box-sizing: border-box;
     }
 
     .profile-section {
