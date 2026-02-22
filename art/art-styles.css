@@ -338,8 +338,113 @@ a:active {
 /* Responsive Design */
 
 @media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+        overflow-x: hidden;
+    }
+
     .title {
-        left: 20px;
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .title h2 {
+        font-size: 24px;
+    }
+
+    .back-link {
+        top: 20px;
+        right: 20px;
+        color: rgb(171, 171, 171);
+    }
+
+    .back-link:hover,
+    .back-link:active {
+        color: #ff9690;
+    }
+
+    .art-showcase {
+        margin-top: 20px;
+    }
+
+    .art-section {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .art-item {
+        max-width: 100%;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .art-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .art-logo {
+        max-width: 100%;
+    }
+
+    .art-logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .photo {
+        width: 100%;
+        height: 230px;
+    }
+
+    .photo-big {
+        width: 100%;
+        height: 600px;
+    }
+
+    .photo-big .photo-front,
+    .photo-big .photo-back {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .photo-big .photo-front img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .photo-front img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .photo.photo-rotated {
+        width: 100%;
+        height: 450px;
+    }
+
+    .photo.photo-rotated .photo-front,
+    .photo.photo-rotated .photo-back {
+        width: 100%;
+        height: 100%;
+    }
+
+    .inspiration {
+        margin-left: 0;
+        padding: 0 15px;
+    }
+
+    .film-section {
+        gap: 15px;
     }
 
     .film-item {
@@ -361,28 +466,5 @@ a:active {
         align-items: center;
         max-width: 100%;
         margin-right: 0;
-    }
-
-    .back-link {
-        top: 45px;
-        right: 20px;
-        color: rgb(171, 171, 171);
-    }
-
-    .back-link:hover,
-    .back-link:active {
-        color: #ff9690;
-    }
-
-    .title h1 {
-        font-size: 30px;
-    }
-
-    .title h2 {
-        font-size: 24px;
-    }
-
-    .container {
-        align-items: center;
     }
 }

@@ -161,20 +161,32 @@ a:active {
 
 
 @media screen and (max-width: 768px) {
-    .photo {
-        width: 100%;
-        max-width: 100%;
-    }
     body {
-        padding-left: 5%;
-        padding-right: 5%;
-        margin-top: 0px;
-        margin-left: 20px;
+        padding: 20px 5% 90px 5%;
+        margin-top: 0;
+        margin-left: 0;
+        box-sizing: border-box;
     }
 
-    .profile-section {
-        flex-direction: column;
-        align-items: center;
+    .title {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .title h2 {
+        font-size: 22px;
+    }
+
+    .horizontal-nav {
+        margin-top: 0.5rem;
+    }
+
+    .photo {
+        width: 100%;
         max-width: 100%;
     }
 
@@ -190,30 +202,30 @@ a:active {
 
     p {
         font-size: 14px;
-        margin: none;
     }
 
     li {
         font-size: 14px;
     }
-    
+
     .quote {
-        color: #ff9690; 
+        color: #ff9690;
         font-size: 14px;
         font-style: italic;
         text-align: center;
-      }
-    
-      .footnotes {
+    }
+
+    .footnotes {
         font-size: 11px;
         color: #666;
         font-style: italic;
         margin-top: 1rem;
-      }
+    }
 
     .back-link {
-        top: 70px;
-        right: 30px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
         color: rgb(171, 171, 171);
     }
 
@@ -225,5 +237,4 @@ a:active {
     .pink {
         color: #ff9690;
     }
-    
 }

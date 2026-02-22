@@ -147,12 +147,41 @@ a:active {
 
 
 @media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+        overflow-x: hidden;
+    }
+
     .title {
         left: 20px;
     }
 
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .title h2 {
+        font-size: 24px;
+    }
+
+    .back-link {
+        top: 45px;
+        right: 20px;
+        color: rgb(171, 171, 171);
+    }
+
+    .back-link:hover,
+    .back-link:active {
+        color: #ff9690;
+    }
+
+    .project-showcase {
+        margin-top: 80px;
+    }
+
     .project-item {
         flex: 0 1 100%;
+        min-width: auto;
     }
 
     .subtitle, .subtitle2, .subtitle3 {
@@ -170,28 +199,5 @@ a:active {
         align-items: center;
         max-width: 100%;
         margin-right: 0;
-    }
-
-    .back-link {
-        top: 45px;
-        right: 20px;
-        color: rgb(171, 171, 171);
-    }
-
-    .back-link:hover,
-    .back-link:active {
-        color: #ff9690;
-    }
-
-    .title h1 {
-        font-size: 30px;
-    }
-
-    .title h2 {
-        font-size: 24px;
-    }
-
-    .container {
-        align-items: center;
     }
 }

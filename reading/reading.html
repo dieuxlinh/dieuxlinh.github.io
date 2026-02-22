@@ -33,16 +33,34 @@
     @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        align-items: flex-start; 
-        margin-top: 70px;
-        margin-left: -50px;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
     }
     .book {
-        width: 480px;
-        height: 300px; 
+        width: calc(100vw - 40px);
+        max-width: 370px;
+        height: 260px;
     }
     .flipbook {
-        position: relative; 
+        position: relative;
+    }
+    .flipbook .page small,
+    .flipbook .page smallw {
+        font-size: 10px;
+        margin: 8px 12px;
+        line-height: 1.3;
+    }
+    .flipbook .hard {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flipbook .page img {
+        width: 60%;
     }
     .subtitle, .subtitle2, .subtitle3 {
         display: none;

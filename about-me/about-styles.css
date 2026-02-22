@@ -94,7 +94,8 @@ a:active {
         padding-left: 5%;
         padding-right: 5%;
         margin-top: 0px;
-        margin-left: 20px;
+        margin-left: 0;
+        box-sizing: border-box;
     }
 
     .profile-section {

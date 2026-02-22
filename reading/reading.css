@@ -173,38 +173,33 @@ a:active {
 /* Responsive Design - Fixing Spacing Issues on Mobile Devices */
 
 @media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        align-items: center;
+    }
 
     .title {
-        left: 20px;
-    }
-    .subtitle, .subtitle2, .subtitle3 {
-        left: 20px;
-    }
-
-    /* Fix overlapping issues by reducing text size and margin adjustments */
-    .subtitle p, .subtitle2 p, .subtitle3 p {
-        font-size: 13px;
-        margin: 5px 0;
-    }
-
-    /* Flipbook should be full width on smaller screens */
-    .flipbook {
+        position: static;
+        margin-bottom: 10px;
+        text-align: center;
         width: 100%;
-        height: auto;
     }
 
-    /* Adjust container layout to ensure proper spacing */
-    .container {
-        margin: 20px 0;
-        flex-direction: column;
-        align-items: center;
-        max-width: 100%;
-        margin-right: 0;
+    .title h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .title h2 {
+        font-size: 24px;
+        text-align: center;
     }
 
     .back-link {
-        top: 45px; /* Adjust distance from the top for mobile */
-        right: 20px; /* Adjust distance from the right for mobile */
+        top: 20px;
+        right: 20px;
         color: rgb(171, 171, 171);
     }
 
@@ -213,13 +208,30 @@ a:active {
         color: #ff9690;
     }
 
-    /* Fix title font-size on mobile */
-    .title h1 {
-        font-size: 30px;
+    .subtitle, .subtitle2, .subtitle3 {
+        position: static;
+        margin-top: 20px;
     }
 
-    .title h2 {
-        font-size: 24px;
+    .subtitle p, .subtitle2 p, .subtitle3 p {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+
+    .container {
+        margin: 20px 0 !important;
+        margin-right: 0 !important;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .flipbook {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
 }
 
